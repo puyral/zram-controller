@@ -1,0 +1,10 @@
+[Unit]
+Description=auto make and delete zram
+
+[Service]
+WorkingDirectory=/home/simon/scripts/swapper
+ExecStart=/home/simon/scripts/swapper/launcher.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
